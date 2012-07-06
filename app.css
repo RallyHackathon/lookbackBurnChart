@@ -1,0 +1,17 @@
+.app {
+    background-color: transparent;
+    margin: 10px;
+}
+
+.date-label,
+.date-field {
+    width: auto !important;
+}
+
+.date-field {
+    margin-right: 20px;
+}
+
+.cumulative-flow-chart {
+    margin-top: 20px;
+}

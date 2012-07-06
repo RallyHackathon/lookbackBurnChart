@@ -1,0 +1,11 @@
+{
+    "name": "lookbackBurnChart",
+    "className": "LookbackBurnChartApp",
+    "sdk": "2.0p3",
+    "javascript": [
+        "App.js"
+    ],
+    "css": [
+        "app.css"
+    ]
+}

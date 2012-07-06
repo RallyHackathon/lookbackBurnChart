@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lookbackBurnChart</title>
+
+    <script type="text/javascript" src="http://localhost:7001/apps/2.0p3/sdk-debug.js?server=https://test13cluster.rallydev.com"></script>
+
+    <script type="text/javascript">
+        Rally.onReady(function() {
+            Rally.loadScripts([
+                "App.js"
+            ], function() {
+                Rally.launchApp('LookbackBurnChartApp', {
+                    name: 'lookbackBurnChart'
+                })
+            }, true);
+        });
+    </script>
+
+<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body></body>
+</html>
