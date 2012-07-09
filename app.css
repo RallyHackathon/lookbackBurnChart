@@ -1,6 +1,7 @@
 .app {
     background-color: transparent;
     margin: 10px;
+    padding-right: 20px;
 }
 
 .date-label,

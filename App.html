@@ -129,8 +129,8 @@
                                 'scope'
                             ],
                             acceptedStates:['Accepted', 'Released'],
-                            startDate:this._getStartDate(),
-                            endDate:this._getEndDate()
+                            startDate:this.down('#startDate').getValue(),
+                            endDate:this.down('#endDate').getValue()
                         },
                         chartConfig:{
                             title:{
@@ -138,14 +138,6 @@
                             }
                         }
                     });
-                },
-            
-                _getStartDate:function () {
-                    return this.down('#startDate').getValue();
-                },
-            
-                _getEndDate:function () {
-                    return this.down('#endDate').getValue();
                 }
             });
             Rally.launchApp('LookbackBurnChartApp', {
@@ -158,6 +150,7 @@
         .app {
             background-color: transparent;
             margin: 10px;
+            padding-right: 20px;
         }
         
         .date-label,

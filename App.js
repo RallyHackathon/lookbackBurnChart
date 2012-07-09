@@ -120,8 +120,8 @@ Ext.define('LookbackBurnChartApp', {
                     'scope'
                 ],
                 acceptedStates:['Accepted', 'Released'],
-                startDate:this._getStartDate(),
-                endDate:this._getEndDate()
+                startDate:this.down('#startDate').getValue(),
+                endDate:this.down('#endDate').getValue()
             },
             chartConfig:{
                 title:{
@@ -129,13 +129,5 @@ Ext.define('LookbackBurnChartApp', {
                 }
             }
         });
-    },
-
-    _getStartDate:function () {
-        return this.down('#startDate').getValue();
-    },
-
-    _getEndDate:function () {
-        return this.down('#endDate').getValue();
     }
 });
