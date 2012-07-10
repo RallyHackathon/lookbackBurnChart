@@ -62,6 +62,9 @@ Ext.define('LookbackBurnChartApp', {
         this.add({
             xtype:'rallychooserdialog',
             artifactTypes:['portfolioitem'],
+            storeConfig: {
+                fetch: ['PortfolioItemType']
+            },
             title:'Choose Portfolio Item',
             autoShow:true,
             listeners:{
@@ -114,7 +117,7 @@ Ext.define('LookbackBurnChartApp', {
             burnConfig:{
                 timeZone:this.getContext().getUser().UserProfile.TimeZone ||
                     this.getContext().getWorkspace().WorkspaceConfiguration.TimeZone,
-                aggregationType:'Story Count',
+                aggregationType:'count',
                 series:[
                     'up',
                     'scope'
@@ -125,7 +128,7 @@ Ext.define('LookbackBurnChartApp', {
             },
             chartConfig:{
                 title:{
-                    text:portfolioItem.FormattedID + ': ' + portfolioItem.Name
+                    text:portfolioItem.PortfolioItemType + ' ' + portfolioItem.FormattedID + ': ' + portfolioItem.Name
                 }
             }
         });
