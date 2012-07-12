@@ -26,7 +26,7 @@ Ext.define('LookbackBurnChartApp', {
                 itemId:'startDate',
                 cls:'date-field',
                 fieldLabel:'Start Date',
-                labelClsExtra:'date-label',
+                labelWidth: 60,
                 format:Rally.util.DateTime.getUserExtDateFormat(),
                 value:Rally.util.DateTime.add(new Date, 'day', -30),
                 listeners:{
@@ -39,7 +39,7 @@ Ext.define('LookbackBurnChartApp', {
                 itemId:'endDate',
                 cls:'date-field',
                 fieldLabel:'End Date',
-                labelClsExtra:'date-label',
+                labelWidth: 60,
                 format:Rally.util.DateTime.getUserExtDateFormat(),
                 value:new Date(),
                 listeners:{

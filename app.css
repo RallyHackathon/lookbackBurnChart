@@ -4,11 +4,6 @@
     padding-right: 20px;
 }
 
-.date-label,
-.date-field {
-    width: auto !important;
-}
-
 .date-field {
     margin-right: 20px;
 }
