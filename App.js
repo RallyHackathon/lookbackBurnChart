@@ -117,7 +117,7 @@ Ext.define('LookbackBurnChartApp', {
             burnConfig:{
                 timeZone:this.getContext().getUser().UserProfile.TimeZone ||
                     this.getContext().getWorkspace().WorkspaceConfiguration.TimeZone,
-                aggregationType:'count',
+                aggregationType:'estimate',
                 series:[
                     'up',
                     'scope'
@@ -128,7 +128,7 @@ Ext.define('LookbackBurnChartApp', {
             },
             chartConfig:{
                 title:{
-                    text:portfolioItem.PortfolioItemType + ' ' + portfolioItem.FormattedID + ': ' + portfolioItem.Name
+                    text:portfolioItem.PortfolioItemType.Name + ' ' + portfolioItem.FormattedID + ': ' + portfolioItem.Name
                 }
             }
         });
